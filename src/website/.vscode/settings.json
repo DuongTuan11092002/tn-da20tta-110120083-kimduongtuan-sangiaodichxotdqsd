@@ -1,0 +1,11 @@
+{
+	"editor.formatOnSave": false,
+	"editor.formatOnPaste": false,
+	"editor.formatOnType": false,
+	"diffEditor.experimental.showEmptyDecorations": false,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.minimap.autohide": true,
+	"editor.minimap.enabled": false,
+	"editor.fontSize": 22,
+	"editor.fontWeight": "1000"
+}
