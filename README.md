@@ -25,16 +25,44 @@ git clone https://github.com/DuongTuan11092002/tn-da20tta-110120083-kimduongtuan
 cd tn-da20tta-110120083-kimduongtuan-sangiaodichxotdqsd
 ```
 
-3. Cài đặt Composer dependencies:
+3. Cài đặt đường dẫn:
 
+ - Vào thư mục application/config/config.php
+ - cấu hình lại config['base_url'] = đường dẫn hệ thống
 ```bash
-composer install
+  $config['base_url'] = 'http://localhost:7000/';
 ```
 
 4. Cấu hình cơ sở dữ liệu:
+- Vào thư mục application/config/database.php
+```bash
+  <?php
+defined('BASEPATH') or exit('No direct script access allowed');
+$active_group = 'default';
+$query_builder = TRUE;
+$db['default'] = array(
+	'dsn'	=> '',
+	'hostname' => 'localhost',
+	'username' => 'root', //thông tin về máy chủ sql
+	'password' => '', //mật khẩu mysql
+	'database' => 'db_ecommer_basic', // tên csdl
+	'dbdriver' => 'mysqli',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+```
 
-* Tạo file `.env` trong thư mục gốc dự án.
-* Cập nhật thông tin kết nối cơ sở dữ liệu trong file `.env`.
 
 5. Khởi chạy migrations:
 
