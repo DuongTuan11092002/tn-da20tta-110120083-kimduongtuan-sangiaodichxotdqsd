@@ -17,7 +17,7 @@ Dự án này là một sàn giao dịch xe ô tô đã qua sử dụng, đượ
 git clone https://github.com/DuongTuan11092002/tn-da20tta-110120083-kimduongtuan-sangiaodichxotdqsd.git
 cd tn-da20tta-110120083-kimduongtuan-sangiaodichxotdqsd
 
-### 2. Cấu hình cơ sở dữ liệu
+**2. Cấu hình cơ sở dữ liệu**
 Mở file application/config/database.php và chỉnh sửa thông tin kết nối cơ sở dữ liệu của bạn:
 
 $db['default'] = array(
@@ -41,6 +41,5 @@ $db['default'] = array(
     'failover' => array(),
     'save_queries' => TRUE
 );
-
-### 3. Tạo cơ sở dữ liệu
+**3. Tạo cơ sở dữ liệu**
 Nhập các tệp SQL có trong thư mục database để tạo cấu trúc và dữ liệu ban đầu cho dự án.
